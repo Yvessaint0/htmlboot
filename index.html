@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device=width, initial-scale=1.0">
+		<title>The News</title>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<link rel = "stylesheet" href = "css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<style>
+		.accordion-header {
+		  background-color: #f8f9fa; /* Light background color */
+		  text-align: center;
+		}
+		.accordion-button {
+		  background-color: #C34A2C; /* Primary color */
+		  color: #ffffff; /* White text color */
+		  text-align: center;
+		}
+		.accordion-button:hover {
+		  background-color: #EB5406; /* Darker shade on hover */
+		  color: #ffffff;
+		}
+		.accordion-button:focus {
+		  box-shadow: none;
+		}
+		.accordion-button:not(.collapsed) {
+		  background-color: #C34A2C; /* Darker shade when expanded */
+		  color: #ffffff;
+		  box-shadow: none;
+		}
+		.custom-btn {
+		background-color: #C34A2C; /* Change this to your desired color */
+		color: white;
+		border: none;
+		}
+		.custom-btn:hover {
+		background-color: #EB5406; /* Change this to a darker shade of your desired color for the hover effect */
+		color: white;
+		}
+		.navbar-custom {
+		background-color: #C34A2C; /* Change this to your desired background color */
+		}
+		
+		.navbar-custom .navbar-nav .nav-link {
+		color: #ffffff; /* Change this to your desired text color */
+		}
+
+		.navbar-custom .navbar-nav .nav-link:hover {
+		color: #000000; /* Change this to your desired hover text color */
+		}
+
+		.navbar-custom .navbar-toggler {
+		border-color: #C34A2C; /* Change this to your desired toggler border color */
+		}
+
+		.navbar-custom .navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, 255, 255, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+		}
+	  </style>
+
+	<body>
+
+		
+		<div class="container">
+			<div class="logo-wrapper d-flex align-items-center justify-content-center">
+				<h1>
+					<a href="index.html" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						The Daily Report
+					</a>
+				</h1>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-custom justify-content-center">
+			<div class="container-fluid justify-content-center">
+			  <a class="navbar-brand justify-content-center" href="#"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="section1.html">Local News</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="section2.html">Weather</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="section3.html">Showbiz</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="section4.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Sports
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="section4subpage1.html">Volleyball</a></li>
+					  <li><a class="dropdown-item" href="section4subpage2.html">Basketball</a></li>
+					  <li><a class="dropdown-item" href="section4subpage3.html">Olympics</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		  
+		
+
+		<div class="container main-news section">
+			<div class="row">
+			  <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
+				<div class="row">
+				  <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+					<div class="card text-center card" style="width: 18rem;">
+					  <img src="local news1.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Local News</h5>
+						<p class="card-text">Stay informed with the latest happenings and updates from your community and surrounding areas.</p>
+						<span class="tt" data-bs-placement="bottom" title="Go to article">
+						  <a href="section1.html" class="btn custom-btn">Read More</a>
+						</span>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+					<div class="card text-center card" style="width: 18rem;">
+					  <img src="weathermainpage.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Weather Forecast</h5>
+						<p class="card-text">Get accurate and up-to-date weather forecasts to plan your day with confidence.</p>
+						<span class="tt" data-bs-placement="bottom" title="Go to article">
+						  <a href="section2.html" class="btn custom-btn">Read More</a>
+						</span>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
+				<div class="row">
+				  <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+					<div class="card text-center card" style="width: 18rem;">
+					  <img src="showbiz1.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Showbiz</h5>
+						<p class="card-text">Catch up on the latest entertainment news, celebrity gossip, and industry updates.</p>
+						<span class="tt" data-bs-placement="bottom" title="Go to article">
+						  <a href="section3.html" class="btn custom-btn">Read More</a>
+						</span>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+					<div class="card text-center card" style="width: 18rem;">
+					  <img src="sports1.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Sports</h5>
+						<p class="card-text">Follow the latest scores, highlights, and news from the world of sports, covering all your favorite teams.</p>
+						<span class="tt" data-bs-placement="bottom" title="Go to article">
+						  <a href="section4.html" class="btn custom-btn">Read More</a>
+						</span>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+			<div class="container section">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<div class="mb-4 mt-4">
+							
+							<div class="row mb-3 bb-1 pt-0">
+								<div id="carouselExampleCaptions" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="subpage1.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>Ex-solons dismiss 'PDEA leaks'</h5>
+                                          <p>Former and incumbent lawmakers and Philippine Drug Enforcement Agency (PDEA) officials branded as false an allegedly leaked document from the agency</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="section2subpage1.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>Rain hits Metro Manila amid extreme heat</h5>
+                                          <p>Rain brought by localized thunderstorms hit parts of Metro Manila, providing relief to the public amid the high heat index</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="section2subpage4.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>El Niño humihina na – PAGASA</h5>
+                                          <p>Humihina na ang El Niño at posibleng magtapos na ang naturang weather phenomenon sa Hunyo.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+							</div>
+							<div class="row mb-3 bb-1 pt-0">
+								<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+									<img class="thumb" src="india2.jpg">
+								</div>
+								<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+									<h5>
+										<a href="section3subpage1.html">
+											'This journey's been ours': Michelle Dee marks Miss Universe Philippines coronation anniversary'
+										</a>
+									</h5>
+									<small>May 14, 2024 | 12:32pm</small>
+									<p class="summary pt-3">MANILA, Philippines — Beauty queen-actress Michelle Dee marked the anniversary of her coronation as Miss Universe Philippines, just over a week before she names her successor.</p>
+								</div>
+							</div>
+							<div class="row mb-3 bb-1 pt-0">
+								<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+									<img class="thumb" src="sports3.jpg">
+								</div>
+								<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+									<h5>
+										<a href="section4subpage1.html">
+											Alpha predators rule
+										</a>
+									</h5>
+									<small>May 14, 2024 | 12:00am</small>
+									<p class="summary pt-3">MANILA, Philippines — The Creamline Cool Smashers, like everybody else, will get the rest that they deserve following one of the toughest, if not the toughest, conferences in PVL history.</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="trending mt-4">
+							
+							<div class="accordion" id="accordionExample">
+								<div class="accordion-item">
+								  <h2 class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									  Trending News
+									</button>
+								  </h2>
+								  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<img src="section2subpage3.jpg" alt="Description of image 3" class="img-fluid mt-3">
+										<strong class="justify-content-center">Groups file complaint against Manila Bay reclamation, dredging projects</strong><br>
+										Fishers and environmentalists on Monday filed a complaint against the Philippine Reclamation Authority (PRA) and the Department of Environment
+									</div>
+								  </div>
+								</div>
+								<div class="accordion-item">
+								  <h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Trending News
+									</button>
+								  </h2>
+								  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<img src="local1subpage2.jpg" alt="Description of image 3" class="img-fluid mt-3">
+										<strong class="justify-content-center">Bam Aquino gears up for political comeback in 2025 midterm polls</strong><br>
+										Former senator Bam Aquino is staging his political comeback in the 2025 midterm polls with a familiar banner of championing youth leadership.
+									</div>
+								  </div>
+								</div>
+								<div class="accordion-item">
+								  <h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Trending News
+									</button>
+								  </h2>
+								  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<img src="boxing.jpg" alt="Description of image 3" class="img-fluid mt-3">
+										<strong class="justify-content-center">'Pro boxer bids for Paris slot'</strong><br>
+										Criztian Pitt Laurente is putting his pro boxing career on hold to bid for a slot in the Paris Olympics
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+        
+  
+  <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Returning to Main Page</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Are you done?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='index.html';">Return to main page</button>
+				</div>
+            </div>
+            </div>
+        </div>
+		<footer class="text-center text-lg-start text-white" style="background-color: #C34A2C;">
+				<!-- Grid container without padding -->
+				<div class="container-fluid p-0">
+					<!-- Section: Links -->
+					<section class="">
+						<!-- Grid row -->
+						<div class="row">
+							<!-- Grid column -->
+							<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+								<h6 class="text-uppercase mb-4 font-weight-bold">The Daily Report</h6>
+								<p>The Daily Report is your go-to source for timely and comprehensive news coverage. 
+									With a commitment to delivering accurate and up-to-date information, our website offers a wide range of topics including local news, 
+									weather forecasts, showbiz updates, sports highlights, and more.</p>
+							</div>
+							<!-- Grid column -->
+			
+							<!-- Grid column -->
+							
+							<!-- Grid column -->
+			
+							<!-- Grid column -->
+							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+								<h6 class="text-uppercase mb-4 font-weight-bold">Contacts</h6>
+								<p><i class="fas fa-home mr-3"></i> Manila, Philippines</p>
+								<p><i class="fas fa-envelope mr-3"></i> TheDailyReport@gmail.com</p>
+								<p><i class="fas fa-phone mr-3"></i> 09619996810</p>
+								<p><i class="fas fa-print mr-3"></i> 09277860432</p>
+							</div>
+							<!-- Grid column -->
+			
+							<!-- Grid column -->
+							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+								<h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+			
+								<!-- Social media icons -->
+								<a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/philstarnews"><i class="fab fa-facebook-f"></i>F</a>
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/PhilstarNews"><i class="fab fa-twitter"></i>T</a>
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #da10da" href="https://www.instagram.com/philstarnews"><i class="fab fa-instagram"></i>IG</a>
+								
+							</div>
+							<!-- Grid column -->
+						</div>
+						<!-- Grid row -->
+					</section>
+					<!-- Section: Links -->
+				</div>
+				<!-- Grid container without padding -->
+			
+				<!-- Copyright -->
+				<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+					© 2024 Copyright
+					<a class="text-white" href="#"></a>
+				</div>
+				<!-- Copyright -->
+			</footer>
+		<script type="text/javascript">
+			window.onscroll = function(){
+				setSticky();
+			}
+
+			navbar = document.getElementsByClassName('menu')[0];
+			var sticky = navbar.offsetTop;
+			function setSticky(){
+				if(window.pageYOffset >= sticky){
+					navbar.classList.add('sticky');
+				}else{
+					navbar.classList.remove('sticky');
+				}
+			}
+		</script>
+
+        <script>
+            const tooltips = document.querySelectorAll('.tt')
+            tooltips.forEach(t => {
+                new boostrap.Tooltip(t)
+            })
+        </script>
+
+
+
+	</body>
+
+</html>

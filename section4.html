@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>The News</title>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link rel = "stylesheet" href = "css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <style>
+        .accordion-header {
+          background-color: #f8f9fa; /* Light background color */
+          text-align: center;
+        }
+        .accordion-button {
+          background-color: #C34A2C; /* Primary color */
+          color: #ffffff; /* White text color */
+          text-align: center;
+        }
+        .accordion-button:hover {
+          background-color: #EB5406; /* Darker shade on hover */
+          color: #ffffff;
+        }
+        .accordion-button:focus {
+          box-shadow: none;
+        }
+        .accordion-button:not(.collapsed) {
+          background-color: #C34A2C; /* Darker shade when expanded */
+          color: #ffffff;
+          box-shadow: none;
+        }
+        .custom-btn {
+        background-color: #C34A2C; /* Change this to your desired color */
+        color: white;
+        border: none;
+        }
+        .custom-btn:hover {
+        background-color: #EB5406; /* Change this to a darker shade of your desired color for the hover effect */
+        color: white;
+        }
+        .navbar-custom {
+        background-color: #C34A2C; /* Change this to your desired background color */
+        }
+       
+        .navbar-custom .navbar-nav .nav-link {
+        color: #ffffff; /* Change this to your desired text color */
+        }
+
+
+        .navbar-custom .navbar-nav .nav-link:hover {
+        color: #000000; /* Change this to your desired hover text color */
+        }
+
+
+        .navbar-custom .navbar-toggler {
+        border-color: #C34A2C; /* Change this to your desired toggler border color */
+        }
+
+
+        .navbar-custom .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, 255, 255, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+      </style>
+    <div class="container">
+        <div class="logo-wrapper d-flex align-items-center justify-content-center">
+            <h1>
+                <a href="index.html" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    The Daily Report
+                </a>
+            </h1>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-custom justify-content-center">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand justify-content-center" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="section1.html">Local News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="section2.html">Weather</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="section3.html">Showbiz</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="section4.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sports
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="section4subpage1.html">Volleyball</a></li>
+                  <li><a class="dropdown-item" href="section4subpage2.html">Basketball</a></li>
+                  <li><a class="dropdown-item" href="section4subpage3.html">Olympics</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+        <div class="container main-news">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row mb-3 bb-1 pt-0">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <img class="thumb" src="sports3.jpg">
+                        </div>
+                        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                            <h5>
+                                <a href="section4subpage1.html">
+                                    Alpha predators rule
+                                </a>
+                            </h5>
+                            <small>May 14, 2024 | 12:00am</small>
+                            <p class="summary pt-3">MANILA, Philippines — The Creamline Cool Smashers, like everybody else, will get the rest that they deserve following one of the toughest, if not the toughest, conferences in PVL history.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3 bb-1 pt-0">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <img class="thumb" src="sports4.jpg">
+                        </div>
+                        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                            <h5>
+                                <a href="section4subpage2.html">
+                                    Kings, Bolts renew rivalry
+                                </a>
+                            </h5>
+                            <small>May 14, 2024 | 12:00am</small>
+                            <p class="summary pt-3">MANILA, Philippines — Barangay Ginebra and Meralco are gathering forces and sharpening their weapons with their eighth postseason battle in the last eight seasons on the horizon.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3 bb-1 pt-0">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <img class="thumb" src="boxing.jpg">
+                        </div>
+                        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                            <h5>
+                                <a href="section4subpage3.html">
+                                    'Pro boxer bids for Paris slot'
+                                </a>
+                            </h5>
+                            <small>May 13, 2024 | 12:00am</small>
+                            <p class="summary pt-3">MANILA, Philippines — Criztian Pitt Laurente is putting his pro boxing career on hold to bid for a slot in the Paris Olympics and will join Carlo Paalam, Rogen Ladon and Hergie Bacyadan in the final World Qualifiers in Bangkok on May 23-June 3. There are 51 Olympic tickets left for boxing, 28 men and 23 women, in 13 weight divisions.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3 bb-1 pt-0">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <img class="thumb" src="sports5.jpg">
+                        </div>
+                        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                            <h5>
+                                <a href="section4subpage4.html">
+                                    Sharks pro billiards set for launch
+                                </a>
+                            </h5>
+                            <small>May 15, 2024 | 12:00am</small>
+                            <p class="summary pt-3">MANILA, Philippines — Philippine billiards got a needed shot in the arm with the holding of the first ever professional pool league this year.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="trending mt-4">
+                        
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  References
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="https://www.philstar.com/"><img src="phstar.png" alt="Description of image 3" class="img-fluid mt-3"></a><br>
+                                    <strong class="justify-content-center">Philstar Global</strong><br>
+                                    Philstar.com is a Philippine news, sports, lifestyle and entertainment portal for the Filipino global community. It is the digital arm of the STAR Group of Publications, a leading publisher of newspapers and magazines in the Philippines.
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        <footer class="text-center text-lg-start text-white" style="background-color: #C34A2C;">
+            <!-- Grid container without padding -->
+            <div class="container-fluid p-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">The Daily Report</h6>
+                            <p>The Daily Report is your go-to source for timely and comprehensive news coverage.
+                                With a commitment to delivering accurate and up-to-date information, our website offers a wide range of topics including local news,
+                                weather forecasts, showbiz updates, sports highlights, and more.</p>
+                        </div>
+                        <!-- Grid column -->
+       
+                        <!-- Grid column -->
+                       
+                        <!-- Grid column -->
+       
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contacts</h6>
+                            <p><i class="fas fa-home mr-3"></i> Manila, Philippines</p>
+                            <p><i class="fas fa-envelope mr-3"></i> TheDailyReport@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> 09619996810</p>
+                            <p><i class="fas fa-print mr-3"></i> 09277860432</p>
+                        </div>
+                        <!-- Grid column -->
+       
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+       
+                            <!-- Social media icons -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/philstarnews"><i class="fab fa-facebook-f"></i>F</a>
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/PhilstarNews"><i class="fab fa-twitter"></i>T</a>
+                           
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #da10da" href="https://www.instagram.com/philstarnews"><i class="fab fa-instagram"></i>IG</a>
+                           
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container without padding -->
+       
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2024 Copyright
+                <a class="text-white" href="#"></a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Returning to Main Page</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Are you done?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='index.html';">Return to main page</button>
+				</div>
+            </div>
+            </div>
+        </div>
+            <script type="text/javascript">
+            window.onscroll = function(){
+                setSticky();
+            }
+
+
+            navbar = document.getElementsByClassName('menu')[0];
+            var sticky = navbar.offsetTop;
+            function setSticky(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add('sticky');
+                }else{
+                    navbar.classList.remove('sticky');
+                }
+            }
+        </script>
+    </body>
+</html>

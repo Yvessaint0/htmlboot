@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>The News</title>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link rel = "stylesheet" href = "css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <style>
+        .accordion-header {
+          background-color: #f8f9fa; /* Light background color */
+          text-align: center;
+        }
+        .accordion-button {
+          background-color: #C34A2C; /* Primary color */
+          color: #ffffff; /* White text color */
+          text-align: center;
+        }
+        .accordion-button:hover {
+          background-color: #EB5406; /* Darker shade on hover */
+          color: #ffffff;
+        }
+        .accordion-button:focus {
+          box-shadow: none;
+        }
+        .accordion-button:not(.collapsed) {
+          background-color: #C34A2C; /* Darker shade when expanded */
+          color: #ffffff;
+          box-shadow: none;
+        }
+        .custom-btn {
+        background-color: #C34A2C; /* Change this to your desired color */
+        color: white;
+        border: none;
+        }
+        .custom-btn:hover {
+        background-color: #EB5406; /* Change this to a darker shade of your desired color for the hover effect */
+        color: white;
+        }
+        .navbar-custom {
+        background-color: #C34A2C; /* Change this to your desired background color */
+        }
+       
+        .navbar-custom .navbar-nav .nav-link {
+        color: #ffffff; /* Change this to your desired text color */
+        }
+
+
+        .navbar-custom .navbar-nav .nav-link:hover {
+        color: #000000; /* Change this to your desired hover text color */
+        }
+
+
+        .navbar-custom .navbar-toggler {
+        border-color: #C34A2C; /* Change this to your desired toggler border color */
+        }
+
+
+        .navbar-custom .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, 255, 255, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+      </style>
+    <body>
+
+
+      <div class="container">
+        <div class="logo-wrapper d-flex align-items-center justify-content-center">
+          <h1>
+            <a href="index.html" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              The Daily Report
+            </a>
+          </h1>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-custom justify-content-center">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand justify-content-center" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="section1.html">Local News</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="section2.html">Weather</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="section3.html">Showbiz</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="section4.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sports
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="section4subpage1.html">Volleyball</a></li>
+              <li><a class="dropdown-item" href="section4subpage2.html">Basketball</a></li>
+              <li><a class="dropdown-item" href="section4subpage3.html">Olympics</a></li>
+            </ul>
+            </li>
+          </ul>
+          </div>
+        </div>
+        </nav>
+            <div class="container main-news">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>'This journey's been ours': Michelle Dee marks Miss Universe Philippines coronation anniversary'</h1>
+                        <small>May 14, 2024 | 12:32pm</small>
+                        <p class="mt-4 summary">MANILA, Philippines — Beauty queen-actress Michelle Dee marked the anniversary of her coronation as Miss Universe Philippines, just over a week before she names her successor.</p>
+                        <img src="india2.jpg" class="mt-3 thumb">
+                        <div class="story mt-4">
+                            <p>Michelle posted on her Instagram account a video of her crowning moment as well as a clip onstage with her mother, Miss International 1979 Melanie Marquez.
+                               
+                            </p>
+                            <p>"This has been an incredible year for the books and one heck of a ride all together," Michelle wrote in the post's caption. </p>
+                            <p>The reigning Miss Universe Philippines expressed her gratitude to all her supporters and people who backed her, "This journey has been ours, a true representation of our resilience and a celebration who we're proud to be. All love." </p>
+                            <p>Among those who sent congratulatory messages for Michelle's coronation anniversary were fellow beauty queens Pauline Amelinckx and Samantha Panlilio, designer Mark Bumgarner, drag queen Marina Summers, and host-personality Tim Yap.</p>
+                            <p>On May 22 in Mall of Asia Arena, over 50 delegates from around and beyond the Philippines will vie to be Michelle's successor as Miss Universe Philippines.</p>
+                            <p>The winner will then represent the country at the 73rd Miss Universe pageant in Mexico later this year in hopes of winning the country's fifth title.</p>
+                        </div>
+                    <hr>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Returning to Main Page</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  Are you done?
+                  </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="location.href='index.html';">Return to main page</button>
+          </div>
+              </div>
+              </div>
+          </div>
+      <footer class="text-center text-lg-start text-white" style="background-color: #C34A2C;">
+          <!-- Grid container without padding -->
+          <div class="container-fluid p-0">
+            <!-- Section: Links -->
+            <section class="">
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">The Daily Report</h6>
+                  <p>The Daily Report is your go-to source for timely and comprehensive news coverage. 
+                    With a commitment to delivering accurate and up-to-date information, our website offers a wide range of topics including local news, 
+                    weather forecasts, showbiz updates, sports highlights, and more.</p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Contacts</h6>
+                  <p><i class="fas fa-home mr-3"></i> Manila, Philippines</p>
+                  <p><i class="fas fa-envelope mr-3"></i> TheDailyReport@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> 09619996810</p>
+                  <p><i class="fas fa-print mr-3"></i> 09277860432</p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+        
+                  <!-- Social media icons -->
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/philstarnews"><i class="fab fa-facebook-f"></i>F</a>
+                              <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/PhilstarNews"><i class="fab fa-twitter"></i>T</a>
+                              <a class="btn btn-primary btn-floating m-1" style="background-color: #da10da" href="https://www.instagram.com/philstarnews"><i class="fab fa-instagram"></i>IG</a>
+                  
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </section>
+            <!-- Section: Links -->
+          </div>
+          <!-- Grid container without padding -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright
+            <a class="text-white" href="#"></a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+
+
+            <script type="text/javascript">
+            window.onscroll = function(){
+                setSticky();
+            }
+
+
+            navbar = document.getElementsByClassName('menu')[0];
+            var sticky = navbar.offsetTop;
+            function setSticky(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add('sticky');
+                }else{
+                    navbar.classList.remove('sticky');
+                }
+            }
+        </script>
+    </body>
+</html>
